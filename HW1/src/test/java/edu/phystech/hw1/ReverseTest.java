@@ -11,7 +11,7 @@ public class ReverseTest {
     private static int[] reverse(int[] nums) {
 
         int[] ret = new int[nums.length];
-        for (int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             ret[i] = nums[nums.length - i - 1];
         }
         return ret;

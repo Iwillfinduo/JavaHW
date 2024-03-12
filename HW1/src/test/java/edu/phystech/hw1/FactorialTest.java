@@ -13,7 +13,7 @@ public class FactorialTest {
         for (long i = 2; i <= n; i++) {
             ret *= i;
         }
-        return  ret;
+        return ret;
     }
 
     @Test

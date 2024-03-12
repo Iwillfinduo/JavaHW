@@ -8,25 +8,12 @@ public class AverageTest {
     // Здесь описаны сигнатуры функции average для трех чисел, нужно переписать сигнатуру, принимающую произвольное
     // количество параметров, то есть вызов функции будет выглядеть так:
     // average(1), average(1, 2), average(1, 2, 3, 4, 5, 10) и тп.
-
-    private static double average(int first) {
-        return first;
-    }
-
-    private static double average(int first, int second) {
-        return (first + second) / 2;
-    }
-
-    private static double average(int first, int second, int third) {
-        return (first + second + third) / 3;
-    }
-
-    private static double average(int ... values) {
-        if (values.length == 0){
+    private static double average(int... values) {
+        if (values.length == 0) {
             return 0;
         }
         int sum = 0;
-        for (int value : values){
+        for (int value : values) {
             sum += value;
         }
         return ((double) sum / values.length);

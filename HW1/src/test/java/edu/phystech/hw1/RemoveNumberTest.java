@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Assertions;
 public class RemoveNumberTest {
 
     private static int[] removeElement(int[] input, int element) {
-        return Arrays.stream( input ).filter( value -> value != element ).toArray();
+        return Arrays.stream(input).filter(value -> value != element).toArray();
     }
 
     @Test

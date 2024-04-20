@@ -51,7 +51,7 @@ class IsNumberASquareOfAnotherNumber implements Predicate<Integer> {
 class EvenNumberSupplier implements Supplier<Integer> {
 
     // Пытался с IntStream, но он меня победил
-    private Integer number;
+    private int number;
     public EvenNumberSupplier(int from) {
         if (from % 2 == 0) {
             this.number = from;
@@ -63,8 +63,8 @@ class EvenNumberSupplier implements Supplier<Integer> {
 
     @Override
     public Integer get() {
-        Integer temp = this.number;
-        this.number = this.number + 2;
+        Integer temp = number;
+        number = number + 2;
         return temp;
     }
 }

@@ -19,7 +19,7 @@ record Contact (String username, String email) implements Comparable<Contact> {
     }
 
     static private boolean isValidName(String username) {
-        return !username.replaceAll("\\s+", "").isEmpty();
+        return !username.replaceAll("\\s+", "").isBlank();
     }
 
     static private boolean isValidEmailAddress(String email) {
